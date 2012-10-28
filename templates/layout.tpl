@@ -2,13 +2,11 @@
 <html>
 {include file='html_head.tpl'}
 <body>
-	<div class="wrapper clearfix">
-		{include file='header.tpl'}
-		<div class="clearfix">
-			{include file=$main_tpl}
-			{include file='side_menu.tpl'}
-		</div>
-		{include file='footer.tpl'}
-	</div>	
+	{include file='header.tpl'}
+	<div id="main_wrapper" class="clearfix">
+		{include file=$main_tpl}
+		{include file='side_menu.tpl'}
+	</div>
+	{include file='footer.tpl'}
 </body>
 </html>
