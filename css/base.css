@@ -88,6 +88,24 @@ input, select {
   display: block; 
   clear: both;
  }
+ 
+ .button{
+	display: block;
+	border:solid 1px #608000;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	-ms-border-radius:5px;
+	-o-border-radius:5px;
+	border-radius:5px;
+	background: #c8e572;
+	background: -moz-linear-gradient(top,  #c8e572 0%, #99cc00 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c8e572), color-stop(100%,#99cc00));
+	background: -webkit-linear-gradient(top,  #c8e572 0%,#99cc00 100%);
+	background: -o-linear-gradient(top,  #c8e572 0%,#99cc00 100%);
+	background: -ms-linear-gradient(top,  #c8e572 0%,#99cc00 100%);
+	background: linear-gradient(to bottom,  #c8e572 0%,#99cc00 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c8e572', endColorstr='#99cc00',GradientType=0 );
+}
 
 body{
 	font-family:'ヒラギノ角ゴ Pro W3','Osaka','メイリオ','Meiryo','ＭＳ Ｐゴシック',sans-serif;
@@ -109,7 +127,7 @@ body{
 #header #piclip_logo{
 	background:url('/images/splite.png') no-repeat 0 -42px;
 	position:absolute;
-	top:10px;
+	top:0;
 }
 
 #header #header_over{

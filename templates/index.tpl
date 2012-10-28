@@ -1,8 +1,8 @@
 <div id="main">
 	<section id="profile_area">
 		<div class="image">
-			<img src="/db/profile_image.png">
-			<a href="">image変更</a>
+			<img class="frofile_image" src="/db/profile_image.png">
+			<div class="button">image変更</div>
 		</div>
 		<div class="text">
 			<h2 class="user_name">たくまっち</h2>

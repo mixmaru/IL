@@ -2,6 +2,7 @@
 class IndexController{
 	private $view;//smarty用
 	private $css_array = array(//このコントローラで表示されるページに必要なcssを指定する
+	    '/css/index.css'
 	);
 	private $css;//assign用
 	private $js_array = array(//このコントローラで表示されるページに必要なjsを指定する
