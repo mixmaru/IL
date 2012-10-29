@@ -8,8 +8,16 @@
 {if isset($css)}
 	{$css}
 {/if}
-<link href="/css/jquery.neosmart.fb.wall.css" rel="stylesheet" type="text/css">
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script type="text/javascript" src="/js/base.js"></script>
+<script>
+{literal}
+	var conf = {
+		$target: $('#main_wrapper')
+	}
+	var window_size = new WindowSize(conf);
+{/literal}
+</script>
 {if isset($js)}
 	{$js}
 {/if}
