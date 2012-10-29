@@ -25,11 +25,11 @@ WindowSize.prototype = {
 	setEvent: function(){
 		var self = this;
 		this.$window.resize(function(){
-			
+			self.resetHeight();
 		});
 	},
 	resetHeight: function(){
-		this.window_heigh = this.getWindowHeight();
+		this.window_height = this.getWindowHeight();
 		this.setHeight();
 	}
 }

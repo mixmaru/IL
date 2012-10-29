@@ -7,6 +7,6 @@
 		{include file=$main_tpl}
 		{include file='side_menu.tpl'}
 	</div>
-	{include file='footer.tpl'}
+	{*include file='footer.tpl'*}
 </body>
 </html>

@@ -160,6 +160,7 @@ body{
 #main_wrapper{
 	width:1150px;
 	margin:0 auto;
+	overflow: scroll;
 }
 
 #main{

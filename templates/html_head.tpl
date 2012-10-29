@@ -12,10 +12,13 @@
 <script type="text/javascript" src="/js/base.js"></script>
 <script>
 {literal}
-	var conf = {
-		$target: $('#main_wrapper')
-	}
-	var window_size = new WindowSize(conf);
+	$(function(){
+		var conf = {
+			$target: $('#main_wrapper')
+		}
+		var window_size = new WindowSize(conf);
+		console.log(window_size);
+	});
 {/literal}
 </script>
 {if isset($js)}
