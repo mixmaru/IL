@@ -1,35 +1,36 @@
 /*
  * conf = {
  *	$target:,
+ *	$header:,
  * }
  * 
  */
 
 function WindowSize(conf){
 	this.$target = conf.$target;
-	this.window_height;
+	this.$header = conf.$header;
 	this.$window = $(window);
 	this.setup();
 }
 WindowSize.prototype = {
 	setup: function(){
-		this.resetHeight();
+		this.resetTargetHeight();
 		this.setEvent();
 	},
 	getWindowHeight: function(){
 		return this.$window.height();
 	},
-	setHeight: function(){
-		this.$target.css('height', this.window_height);
+	getHeaderHeight: function(){
+		return this.$header.height();
 	},
 	setEvent: function(){
 		var self = this;
 		this.$window.resize(function(){
-			self.resetHeight();
+			self.resetTargetHeight();
 		});
 	},
-	resetHeight: function(){
-		this.window_height = this.getWindowHeight();
-		this.setHeight();
+	resetTargetHeight: function(){
+		var target_height = this.getWindowHeight() - this.getHeaderHeight();
+		this.$target.css('height', target_height);
 	}
 }
