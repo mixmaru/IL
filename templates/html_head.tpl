@@ -14,7 +14,7 @@
 {literal}
 	$(function(){
 		var conf = {
-			$target: $('#main_wrapper'),
+			$target: $('#main_scroll'),
 			$header: $('#header')
 		}
 		var window_size = new WindowSize(conf);
