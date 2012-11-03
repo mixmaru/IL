@@ -89,6 +89,10 @@ input, select {
   clear: both;
  }
  
+ input{
+	 font-family:'ヒラギノ角ゴ Pro W3','Osaka','メイリオ','Meiryo','ＭＳ Ｐゴシック',sans-serif;
+ }
+ 
  .button{
 	display: block;
 	border:solid 1px #608000;

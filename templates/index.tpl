@@ -16,19 +16,24 @@
 		<form action="" method="post">
 			<div id="file_drop_area">
 				<p>ここに画像をドロップ<br><span>もしくは</span></p>
-				<input type="file">
+				<input id="file_input" type="file">
 			</div>
-			<div id="add_tag_area">
-				タグ登録<input type="text"><input type="button" value="追加">
-				<ul>
-					<li>tag</li>
-					<li>タグ</li>
-					<li>たぐ</li>
-					<li>田具</li>
-					<li>だず</li>
-				</ul>
-				<p>よく使われるタグから選ぶ</p>
-			</div>
+			<dl id="add_tag_area">
+				<dt>タグ登録</dt>
+				<dd>
+					<div class="tag_input_wrapper">
+						<input id="tag_input" type="text" size="40"><input id="tag_add_btn" class="button" type="button" value="追加">
+					</div>
+					<ul class="add_tag_list">
+						<li><img class="cancel_btn" src="/images/spacer.gif" alt="x">tag</li>
+						<li><img class="cancel_btn" src="/images/spacer.gif" alt="x">タグ</li>
+						<li><img class="cancel_btn" src="/images/spacer.gif" alt="x">たぐ</li>
+						<li><img class="cancel_btn" src="/images/spacer.gif" alt="x">田具</li>
+						<li><img class="cancel_btn" src="/images/spacer.gif" alt="x">だず</li>
+					</ul>
+					<p id="select_from_tag_btn">よく使われるタグから選ぶ</p>
+				</dd>
+			</dl>
 			<ul id="tag_cloud">
 				<li>css</li>
 				<li>JavaScript</li>
