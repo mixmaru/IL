@@ -216,6 +216,11 @@ only screen and (                min-resolution: 2dppx) {
 }
 
  /*スニペットここまで*/
+ .a_style{
+	 color:#0044cc;
+	 text-decoration: underline;
+	 cursor:pointer;
+ }
  
  input{
 	 font-family:'ヒラギノ角ゴ Pro W3','Osaka','メイリオ','Meiryo','ＭＳ Ｐゴシック',sans-serif;
@@ -237,6 +242,7 @@ only screen and (                min-resolution: 2dppx) {
 	background: -ms-linear-gradient(top,  #c8e572 0%,#99cc00 100%);
 	background: linear-gradient(to bottom,  #c8e572 0%,#99cc00 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c8e572', endColorstr='#99cc00',GradientType=0 );
+	cursor:pointer;
 }
 
 .tag{
@@ -250,6 +256,10 @@ only screen and (                min-resolution: 2dppx) {
 	border-radius:5px;
 	box-shadow: 0 1px 0px rgba(0, 0, 0, 0.1);
 }
+.tag > a{
+	color:#4D4D4D;
+	text-decoration: none;
+}
 
 .cancel_btn{
 	width:9px;
@@ -259,6 +269,20 @@ only screen and (                min-resolution: 2dppx) {
 }
 .cancel_btn:hover{
 	background:url('/images/splite.png') -165px -51px;
+}
+
+.input_text{
+	font-size:12px;
+	line-height: 2em; /* 文字の高さ */
+	border: 1px solid #CCDDFF; /* 罫線 */
+	padding:0 10px;
+	height: 2em;
+	background-color: #ffffff; /* 背景 */
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	-o-border-radius:5px;
+	-ms-border-radius:5px;
+	border-radius:5px;
 }
 
 body{

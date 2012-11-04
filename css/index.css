@@ -83,18 +83,6 @@
 }
 #add_tag_area dd #tag_input{
 	width: 158px;
-	font-size:12px;
-	line-height: 2em; /* 文字の高さ */
-	border: 1px solid #CCDDFF; /* 罫線 */
-	padding:0 10px;
-	height: 2em;
-	
-	background-color: #ffffff; /* 背景 */
-	-moz-border-radius:5px;
-	-webkit-border-radius:5px;
-	-o-border-radius:5px;
-	-ms-border-radius:5px;
-	border-radius:5px;
 }
 
 #add_tag_area dd #tag_add_btn{
@@ -157,6 +145,10 @@
 	overflow: hidden;
 	width:913px;
 }
+#library .tags_wrapper{
+	padding:5px;
+	border-top:solid 1px #E6E6E6;
+}
 #library > ul{
 	overflow: hidden;
 }
@@ -176,8 +168,6 @@
 
 #library > ul > li .tags{
 	overflow: hidden;
-	border-top:solid 1px #E6E6E6;
-	padding:5px;
 }
 #library > ul > li .tags li{
 	float:left;
@@ -193,4 +183,19 @@
 #library .loading_image_wrapper{
 	text-align: center;
 	width:885px;
+}
+
+#library .tag_add_form{
+	text-align: center;
+}
+
+#library .input_text{
+	width:100px;
+}
+#library .button{
+	display: inline;
+}
+
+#library .tag_modify_btn{
+	font-size:10px;
 }
