@@ -51,137 +51,140 @@
 	<section id="library">
 		<ul>
 			<li>
-				<img class="image" src="/db/doraemon.png">
+				<img class="image" src="/db/doraemon.png" alt="ドラえもん">
 				<ul class="tags">
-					<li>タグ</li>
-					<li>tag</li>
-					<li>たぐ</li>
-					<li>田具</li>
-					<li>javascript</li>
-					<li>php</li>
-					<li>WordPress</li>
+					<li class="tag"><img class="cancel_btn" src="/images/spacer.gif" alt="x">タグ</li>
+					<li class="tag"><img class="cancel_btn" src="/images/spacer.gif" alt="x">tag</li>
+					<li class="tag"><img class="cancel_btn" src="/images/spacer.gif" alt="x">たぐ</li>
+					<li class="tag"><img class="cancel_btn" src="/images/spacer.gif" alt="x">田具</li>
+					<li class="tag"><img class="cancel_btn" src="/images/spacer.gif" alt="x">javascript</li>
+					<li class="tag"><img class="cancel_btn" src="/images/spacer.gif" alt="x">php</li>
+					<li class="tag"><img class="cancel_btn" src="/images/spacer.gif" alt="x">WordPress</li>
 				</ul>
 			</li>
 			<li>
-				<img class="image" src="/db/doraemon.png">
+				<img class="image" src="/db/doraemon.png" alt="ドラえもん">
 				<ul class="tags">
-					<li>タグ</li>
-					<li>tag</li>
-					<li>たぐ</li>
-					<li>田具</li>
-					<li>javascript</li>
-					<li>php</li>
-					<li>WordPress</li>
+					<li class="tag"><img class="cancel_btn" src="/images/spacer.gif" alt="x">タグ</li>
+					<li class="tag"><img class="cancel_btn" src="/images/spacer.gif" alt="x">tag</li>
+					<li class="tag"><img class="cancel_btn" src="/images/spacer.gif" alt="x">たぐ</li>
+					<li class="tag"><img class="cancel_btn" src="/images/spacer.gif" alt="x">田具</li>
+					<li class="tag"><img class="cancel_btn" src="/images/spacer.gif" alt="x">javascript</li>
+					<li class="tag"><img class="cancel_btn" src="/images/spacer.gif" alt="x">php</li>
+					<li class="tag"><img class="cancel_btn" src="/images/spacer.gif" alt="x">WordPress</li>
 				</ul>
 			</li>
 			<li>
-				<img class="image" src="/db/doraemon.png">
+				<img class="image" src="/db/doraemon.png" alt="ドラえもん">
 				<ul class="tags">
-					<li>タグ</li>
-					<li>tag</li>
-					<li>たぐ</li>
-					<li>田具</li>
-					<li>javascript</li>
-					<li>php</li>
-					<li>WordPress</li>
+					<li class="tag"><img class="cancel_btn" src="/images/spacer.gif" alt="x">タグ</li>
+					<li class="tag"><img class="cancel_btn" src="/images/spacer.gif" alt="x">tag</li>
+					<li class="tag"><img class="cancel_btn" src="/images/spacer.gif" alt="x">たぐ</li>
+					<li class="tag"><img class="cancel_btn" src="/images/spacer.gif" alt="x">田具</li>
+					<li class="tag"><img class="cancel_btn" src="/images/spacer.gif" alt="x">javascript</li>
+					<li class="tag"><img class="cancel_btn" src="/images/spacer.gif" alt="x">php</li>
+					<li class="tag"><img class="cancel_btn" src="/images/spacer.gif" alt="x">WordPress</li>
 				</ul>
 			</li>
 			<li>
-				<img class="image" src="/db/doraemon.png">
+				<img class="image" src="/db/doraemon.png" alt="ドラえもん">
 				<ul class="tags">
-					<li>タグ</li>
-					<li>tag</li>
-					<li>たぐ</li>
-					<li>田具</li>
-					<li>javascript</li>
-					<li>php</li>
-					<li>WordPress</li>
+					<li class="tag"><img class="cancel_btn" src="/images/spacer.gif" alt="x">タグ</li>
+					<li class="tag"><img class="cancel_btn" src="/images/spacer.gif" alt="x">tag</li>
+					<li class="tag"><img class="cancel_btn" src="/images/spacer.gif" alt="x">たぐ</li>
+					<li class="tag"><img class="cancel_btn" src="/images/spacer.gif" alt="x">田具</li>
+					<li class="tag"><img class="cancel_btn" src="/images/spacer.gif" alt="x">javascript</li>
+					<li class="tag"><img class="cancel_btn" src="/images/spacer.gif" alt="x">php</li>
+					<li class="tag"><img class="cancel_btn" src="/images/spacer.gif" alt="x">WordPress</li>
 				</ul>
 			</li>
 			<li>
-				<img class="image" src="/db/doraemon.png">
+				<img class="image" src="/db/doraemon.png" alt="ドラえもん">
 				<ul class="tags">
-					<li>タグ</li>
-					<li>tag</li>
-					<li>たぐ</li>
-					<li>田具</li>
-					<li>javascript</li>
-					<li>php</li>
-					<li>WordPress</li>
+					<li class="tag"><img class="cancel_btn" src="/images/spacer.gif" alt="x">タグ</li>
+					<li class="tag"><img class="cancel_btn" src="/images/spacer.gif" alt="x">tag</li>
+					<li class="tag"><img class="cancel_btn" src="/images/spacer.gif" alt="x">たぐ</li>
+					<li class="tag"><img class="cancel_btn" src="/images/spacer.gif" alt="x">田具</li>
+					<li class="tag"><img class="cancel_btn" src="/images/spacer.gif" alt="x">javascript</li>
+					<li class="tag"><img class="cancel_btn" src="/images/spacer.gif" alt="x">php</li>
+					<li class="tag"><img class="cancel_btn" src="/images/spacer.gif" alt="x">WordPress</li>
 				</ul>
 			</li>
 			<li>
-				<img class="image" src="/db/doraemon.png">
+				<img class="image" src="/db/doraemon.png" alt="ドラえもん">
 				<ul class="tags">
-					<li>タグ</li>
-					<li>tag</li>
-					<li>たぐ</li>
-					<li>田具</li>
-					<li>javascript</li>
-					<li>php</li>
-					<li>WordPress</li>
+					<li class="tag"><img class="cancel_btn" src="/images/spacer.gif" alt="x">タグ</li>
+					<li class="tag"><img class="cancel_btn" src="/images/spacer.gif" alt="x">tag</li>
+					<li class="tag"><img class="cancel_btn" src="/images/spacer.gif" alt="x">たぐ</li>
+					<li class="tag"><img class="cancel_btn" src="/images/spacer.gif" alt="x">田具</li>
+					<li class="tag"><img class="cancel_btn" src="/images/spacer.gif" alt="x">javascript</li>
+					<li class="tag"><img class="cancel_btn" src="/images/spacer.gif" alt="x">php</li>
+					<li class="tag"><img class="cancel_btn" src="/images/spacer.gif" alt="x">WordPress</li>
 				</ul>
 			</li>
 			<li>
-				<img class="image" src="/db/doraemon.png">
+				<img class="image" src="/db/doraemon.png" alt="ドラえもん">
 				<ul class="tags">
-					<li>タグ</li>
-					<li>tag</li>
-					<li>たぐ</li>
-					<li>田具</li>
-					<li>javascript</li>
-					<li>php</li>
-					<li>WordPress</li>
+					<li class="tag"><img class="cancel_btn" src="/images/spacer.gif" alt="x">タグ</li>
+					<li class="tag"><img class="cancel_btn" src="/images/spacer.gif" alt="x">tag</li>
+					<li class="tag"><img class="cancel_btn" src="/images/spacer.gif" alt="x">たぐ</li>
+					<li class="tag"><img class="cancel_btn" src="/images/spacer.gif" alt="x">田具</li>
+					<li class="tag"><img class="cancel_btn" src="/images/spacer.gif" alt="x">javascript</li>
+					<li class="tag"><img class="cancel_btn" src="/images/spacer.gif" alt="x">php</li>
+					<li class="tag"><img class="cancel_btn" src="/images/spacer.gif" alt="x">WordPress</li>
 				</ul>
 			</li>
 			<li>
-				<img class="image" src="/db/doraemon.png">
+				<img class="image" src="/db/doraemon.png" alt="ドラえもん">
 				<ul class="tags">
-					<li>タグ</li>
-					<li>tag</li>
-					<li>たぐ</li>
-					<li>田具</li>
-					<li>javascript</li>
-					<li>php</li>
-					<li>WordPress</li>
+					<li class="tag"><img class="cancel_btn" src="/images/spacer.gif" alt="x">タグ</li>
+					<li class="tag"><img class="cancel_btn" src="/images/spacer.gif" alt="x">tag</li>
+					<li class="tag"><img class="cancel_btn" src="/images/spacer.gif" alt="x">たぐ</li>
+					<li class="tag"><img class="cancel_btn" src="/images/spacer.gif" alt="x">田具</li>
+					<li class="tag"><img class="cancel_btn" src="/images/spacer.gif" alt="x">javascript</li>
+					<li class="tag"><img class="cancel_btn" src="/images/spacer.gif" alt="x">php</li>
+					<li class="tag"><img class="cancel_btn" src="/images/spacer.gif" alt="x">WordPress</li>
 				</ul>
 			</li>
 			<li>
-				<img class="image" src="/db/doraemon.png">
+				<img class="image" src="/db/doraemon.png" alt="ドラえもん">
 				<ul class="tags">
-					<li>タグ</li>
-					<li>tag</li>
-					<li>たぐ</li>
-					<li>田具</li>
-					<li>javascript</li>
-					<li>php</li>
-					<li>WordPress</li>
+					<li class="tag"><img class="cancel_btn" src="/images/spacer.gif" alt="x">タグ</li>
+					<li class="tag"><img class="cancel_btn" src="/images/spacer.gif" alt="x">tag</li>
+					<li class="tag"><img class="cancel_btn" src="/images/spacer.gif" alt="x">たぐ</li>
+					<li class="tag"><img class="cancel_btn" src="/images/spacer.gif" alt="x">田具</li>
+					<li class="tag"><img class="cancel_btn" src="/images/spacer.gif" alt="x">javascript</li>
+					<li class="tag"><img class="cancel_btn" src="/images/spacer.gif" alt="x">php</li>
+					<li class="tag"><img class="cancel_btn" src="/images/spacer.gif" alt="x">WordPress</li>
 				</ul>
 			</li>
 			<li>
-				<img class="image" src="/db/doraemon.png">
+				<img class="image" src="/db/doraemon.png" alt="ドラえもん">
 				<ul class="tags">
-					<li>タグ</li>
-					<li>tag</li>
-					<li>たぐ</li>
-					<li>田具</li>
-					<li>javascript</li>
-					<li>php</li>
-					<li>WordPress</li>
+					<li class="tag"><img class="cancel_btn" src="/images/spacer.gif" alt="x">タグ</li>
+					<li class="tag"><img class="cancel_btn" src="/images/spacer.gif" alt="x">tag</li>
+					<li class="tag"><img class="cancel_btn" src="/images/spacer.gif" alt="x">たぐ</li>
+					<li class="tag"><img class="cancel_btn" src="/images/spacer.gif" alt="x">田具</li>
+					<li class="tag"><img class="cancel_btn" src="/images/spacer.gif" alt="x">javascript</li>
+					<li class="tag"><img class="cancel_btn" src="/images/spacer.gif" alt="x">php</li>
+					<li class="tag"><img class="cancel_btn" src="/images/spacer.gif" alt="x">WordPress</li>
 				</ul>
 			</li>
 			<li>
-				<img class="image" src="/db/doraemon.png">
+				<img class="image" src="/db/doraemon.png" alt="ドラえもん">
 				<ul class="tags">
-					<li>タグ</li>
-					<li>tag</li>
-					<li>たぐ</li>
-					<li>田具</li>
-					<li>javascript</li>
-					<li>php</li>
-					<li>WordPress</li>
+					<li class="tag"><img class="cancel_btn" src="/images/spacer.gif" alt="x">タグ</li>
+					<li class="tag"><img class="cancel_btn" src="/images/spacer.gif" alt="x">tag</li>
+					<li class="tag"><img class="cancel_btn" src="/images/spacer.gif" alt="x">たぐ</li>
+					<li class="tag"><img class="cancel_btn" src="/images/spacer.gif" alt="x">田具</li>
+					<li class="tag"><img class="cancel_btn" src="/images/spacer.gif" alt="x">javascript</li>
+					<li class="tag"><img class="cancel_btn" src="/images/spacer.gif" alt="x">php</li>
+					<li class="tag"><img class="cancel_btn" src="/images/spacer.gif" alt="x">WordPress</li>
 				</ul>
 			</li>
 		</ul>
+		<div class="loading_image_wrapper">
+			<img src="/images/loading.gif" alt="now loading...">
+		</div>
 	</section>
 </div>

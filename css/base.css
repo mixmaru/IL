@@ -80,14 +80,142 @@ hr {
 input, select {
     vertical-align:middle;
 }
-/*reset_css*/
-
-.clearfix {width:100%;}
+/*reset_cssここまで*/
+/*clearfixここから*/
+.clearfix:before,
 .clearfix:after {
-  content: ""; 
-  display: block; 
-  clear: both;
- }
+    content: " ";
+    display: table;
+}
+  
+.clearfix:after {
+    clear: both;
+}
+  
+/* IE6/7 support */
+.clearfix {
+    *zoom: 1;
+}
+ /*clearfixここまで*/
+ 
+ /*スニペットここから*/
+ .float-lef{
+    float: left;
+}
+.float-right{
+    float: right;
+}
+
+.hide {
+    display: none;
+}
+.show {
+    display: block;
+}
+
+.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+table tr:nth-child(even) {
+    background: rgba(0,0,0,0.1);
+}
+/*
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*/
+.visuallyhidden {/*コンテンツを隠す*/
+    position: absolute;
+    width: 1px; /* 0にしてしまうとダメ */
+    height: 1px; /* 0にしてしまうとダメ */
+    padding: 0;
+    margin: -1px;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;  
+}
+
+.ir {/*テキストを隠す*/
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.break {
+    -ms-word-break: break-all;
+    word-break: break-all;
+  
+    word-break: break-word;
+  
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+}
+  
+.ellipsis {
+    width: 250px;
+    white-space: nowrap;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis; /* Required for IE8 */
+    -o-text-overflow: ellipsis; /* Required for Opera */
+    text-overflow: ellipsis;
+}
+
+pre {
+    white-space: pre-wrap;       /* Chrome & Safari */
+    white-space: -moz-pre-wrap;  /* Mozilla since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+@media print {
+    * {
+        background: none !important;
+        color: black !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+  
+        /* Images, vectors and such */
+        filter: Gray();                          /* IE4-8: depreciated */
+        filter: url('desaturate.svg#grayscale'); /* SVG version for IE10, Firefox, Safari 5 and Opera */
+        -webkit-filter: grayscale(100%);         /* Chrome + Safari 6 */
+        -moz-filter: grayscale(100%);            /* Future proof */
+        -ms-filter: grayscale(100%);             /* Future proof */
+        -o-filter: grayscale(100%);              /* Future proof */
+        filter: grayscale(100%);                 /* Future proof or polyfilled */
+    }
+  
+    a {
+        text-decoration: underline;
+    }
+  
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+  
+    a[href="#"],
+    a[href="javascript:"] {
+        content: "";
+    }
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2), /* Looks like a bug, so may want to add: */
+only screen and (   -moz-min-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+    /* ここにRetinaディスプレイ用のスタイルを記述 */
+}
+
+ /*スニペットここまで*/
  
  input{
 	 font-family:'ヒラギノ角ゴ Pro W3','Osaka','メイリオ','Meiryo','ＭＳ Ｐゴシック',sans-serif;
@@ -109,6 +237,28 @@ input, select {
 	background: -ms-linear-gradient(top,  #c8e572 0%,#99cc00 100%);
 	background: linear-gradient(to bottom,  #c8e572 0%,#99cc00 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c8e572', endColorstr='#99cc00',GradientType=0 );
+}
+
+.tag{
+	background-color:#F2F2F2;
+	line-height: 1.6em;
+	padding:0 3px 0;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	-o-border-radius:5px;
+	-ms-border-radius:5px;
+	border-radius:5px;
+	box-shadow: 0 1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.cancel_btn{
+	width:9px;
+	height:9px;
+	background:url('/images/splite.png') -165px -42px;
+	cursor:pointer;
+}
+.cancel_btn:hover{
+	background:url('/images/splite.png') -165px -51px;
 }
 
 body{
