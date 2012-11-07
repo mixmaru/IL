@@ -1,29 +1,29 @@
 <div id="side_menu">
-	<section>
+	<section class="tag_menu">
 		<h2>タグ絞込み</h2>
-		<div>
-			<input type="text">
-			<ul>
-				<li>tag1</li>
-				<li>tag1</li>
-				<li>tag1</li>
-				<li>tag1</li>
-				<li>tag1</li>
-				<li>tag1</li>
-				<li>tag1</li>
-				<li>tag1</li>
-				<li>tag1</li>
-				<li>tag1</li>
-				<li>tag1</li>
-				<li>tag1</li>
-				<li>tag1</li>
-				<li>tag1</li>
-				<li>tag1</li>
-				<li>tag1</li>
-				<li>tag1</li>
-				<li>tag1</li>
-				<li>tag1</li>
-				<li>tag1</li>
+		<div class="contents_wrapper">
+			<input id="tag_search" class="input_text" type="text">
+			<ul class="tag_list">
+				<li><span class="check_box"></span><a href="">tag1</a></li>
+				<li><span class="check_box"></span><a href="">tag1</a></li>
+				<li><span class="check_box"></span><a href="">tag1</a></li>
+				<li><span class="check_box"></span><a href="">tag1</a></li>
+				<li><span class="check_box"></span><a href="">tag1</a></li>
+				<li><span class="check_box"></span><a href="">tag1</a></li>
+				<li><span class="check_box"></span><a href="">tag1</a></li>
+				<li><span class="check_box"></span><a href="">tag1</a></li>
+				<li><span class="check_box"></span><a href="">tag1</a></li>
+				<li><span class="check_box"></span><a href="">tag1</a></li>
+				<li><span class="check_box"></span><a href="">tag1</a></li>
+				<li><span class="check_box"></span><a href="">tag1</a></li>
+				<li><span class="check_box"></span><a href="">tag1</a></li>
+				<li><span class="check_box"></span><a href="">tag1</a></li>
+				<li><span class="check_box"></span><a href="">tag1</a></li>
+				<li><span class="check_box"></span><a href="">tag1</a></li>
+				<li><span class="check_box"></span><a href="">tag1</a></li>
+				<li><span class="check_box"></span><a href="">tag1</a></li>
+				<li><span class="check_box"></span><a href="">tag1</a></li>
+				<li><span class="check_box"></span><a href="">tag1</a></li>
 			</ul>
 		</div>
 	</section>
