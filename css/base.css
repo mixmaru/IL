@@ -400,3 +400,20 @@ body{
 #side_menu .tag_menu .tag_list > li .check_box:hover{
 	background-color:#cccccc;
 }
+
+#side_menu .date_menu{
+	margin:20px 0 0;
+}
+#side_menu .date_menu .contents_wrapper{
+	border:solid 1px #CCDDFF;
+}
+#side_menu .date_menu .contents_wrapper li{
+	list-style-type:none;
+	padding:0 0 0 10px;
+	border-top:solid 1px #CCDDFF;
+	font-size:13px;
+	line-height: 2em;
+}
+#side_menu .date_menu .contents_wrapper li:hover{
+	border-top:none;
+}
