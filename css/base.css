@@ -121,13 +121,13 @@ input, select {
 table tr:nth-child(even) {
     background: rgba(0,0,0,0.1);
 }
-/*
+
 *, *:before, *:after {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-*/
+
 .visuallyhidden {/*コンテンツを隠す*/
     position: absolute;
     width: 1px; /* 0にしてしまうとダメ */
@@ -369,7 +369,7 @@ body{
 #side_menu .tag_menu .input_text{
 	display: block;
 	margin:0 auto;
-	width:170px;
+	width:100%;
 }
 
 #side_menu .tag_menu .tag_list{
