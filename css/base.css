@@ -409,11 +409,32 @@ body{
 }
 #side_menu .date_menu .contents_wrapper li{
 	list-style-type:none;
-	padding:0 0 0 10px;
+	padding:0 0 0 31px;
 	border-top:solid 1px #CCDDFF;
 	font-size:13px;
 	line-height: 2em;
 }
-#side_menu .date_menu .contents_wrapper li:hover{
+#side_menu .date_menu .contents_wrapper li:first-child{
 	border-top:none;
+}
+#side_menu .date_menu .contents_wrapper .year{
+	border-top:solid 1px #CCDDFF;
+	border-bottom:solid 1px #CCDDFF;
+	background-color:#E6EEFF;
+	font-size:13px;
+	line-height: 2em;
+	padding:0 0 0 31px;
+	position:relative;
+}
+#side_menu .date_menu .contents_wrapper .year:before{
+	content: "";
+	display: block;
+	width: 0;
+	height: 0;
+	border-style:solid;
+	border-width:7px 0 7px 7px;
+	border-color:transparent transparent transparent #000000;
+	position:absolute;
+	left: 13px;
+	top: 5px;
 }

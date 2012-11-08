@@ -40,7 +40,7 @@
 				<li><a href="">2012/01</a></li>
 			</ul>
 			<dl>
-				<dt>2011</dt>
+				<dt class="year">2011</dt>
 				<dd>
 					<ul>
 						<li><a href="">2011/12</a></li>
