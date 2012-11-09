@@ -8,8 +8,7 @@
 			<div class="text">
 				<h2 class="user_name">たくまっち</h2>
 				<p class="user_comment">
-					ただ毎日 アニメ見てるか ゲームしてるか 
-	ギター弾いてます おっぱいが好きです
+					ただ毎日 ああああああああああああああああああああああああああああああああああああ
 				</p>
 			</div>
 		</section>
