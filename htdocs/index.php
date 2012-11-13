@@ -1,8 +1,8 @@
 <?php
 //システムルートディレクトリ
-define('ROOT_PATH', realpath(dirname(__FILE__).'/'));
+define('ROOT_PATH', realpath(dirname(__FILE__).'/..'));
 //ライブラリのディレクトリパス
-define('LIB_PATH', realpath(dirname(__FILE__).'/library'));
+define('LIB_PATH', realpath(dirname(__FILE__).'/../library'));
 //ライブラリとモデルのディレクトリをinclude_pathに追加
 $includes = array(LIB_PATH.'/mvc', LIB_PATH.'/models');
 $incPath = implode(PATH_SEPARATOR, $includes);
