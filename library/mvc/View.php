@@ -1,11 +1,11 @@
 <?php
-require_once("Smarty/Smarty.class.php");
 class View {
 	private $smarty;
 	private $css;
 	private $js;
 	
 	public function __construct($css_array, $js_array){
+		require_once("Smarty/Smarty.class.php");
 		$this->smarty = new Smarty();
 		$this->smarty->template_dir = $_SERVER['DOCUMENT_ROOT'].'/templates/';
 		$this->smarty->compile_dir = $_SERVER['DOCUMENT_ROOT'].'/templates_c/';
