@@ -7,10 +7,10 @@ class View {
 	public function __construct($css_array, $js_array){
 		require_once("Smarty/Smarty.class.php");
 		$this->smarty = new Smarty();
-		$this->smarty->template_dir = ROOT_PATH.'/view/templates/';
-		$this->smarty->compile_dir = ROOT_PATH.'/view/templates_c/';
-		$this->smarty->config_dir = ROOT_PATH.'/view/configs/';
-		$this->smarty->cache_dir = ROOT_PATH.'/view/cache/';
+		$this->smarty->template_dir = LIB_PATH.'/view/templates/';
+		$this->smarty->compile_dir = LIB_PATH.'/view/templates_c/';
+		$this->smarty->config_dir = LIB_PATH.'/view/configs/';
+		$this->smarty->cache_dir = LIB_PATH.'/view/cache/';
 		$this->smarty->caching = true;
 		
 		//cssの読み込み準備

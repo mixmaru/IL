@@ -16,9 +16,9 @@ function __autoload($className){
 //データベース接続情報設定
 $connInfo = array(
 	'host' => 'localhost',
-	'dbname' => 'sample',
-	'dbuser' => 'hoge',
-	'password' => 'wwwwwww'
+	'dbname' => 'piclip',
+	'dbuser' => 'shin',
+	'password' => '5963'
 );
 //ModelBase::setConnectionInfo($connInfo);
 
