@@ -24,7 +24,7 @@ ModelBase::setConnectionInfo($connInfo);
 
 //リクエスト処理
 $dispatcher = new Dispatcher();
-$dispatcher->setSystemRoot(ROOT_PATH);
+$dispatcher->setSystemRoot(LIB_PATH);
 $dispatcher->dispatch();
 //$dispatcher->setSystemRoot(ROOT_PATH);
 //$dispatcher->dispatch();

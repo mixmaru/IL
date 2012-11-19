@@ -2,10 +2,10 @@
 
 class Dispatcher{
 
-	private $sysRoot;
+	private $sysLib;
 	
 	public function setSystemRoot($path){
-		$this->sysRoot = rtrim($path, '/');
+		$this->sysLib = rtrim($path, '/');
 	}
 	
 	public function dispatch(){
@@ -24,8 +24,8 @@ class Dispatcher{
 		// パラメータより取得したコントローラー名によりクラス振分け
 		$className = ucfirst(strtolower($controller)).'Controller';
 		// クラスファイル読込
-		if( file_exists($this->sysRoot.'/controllers/'.$className.'.php') ){
-			require_once $this->sysRoot.'/controllers/'.$className.'.php';
+		if( file_exists($this->sysLib.'/controllers/'.$className.'.php') ){
+			require_once $this->sysLib.'/controllers/'.$className.'.php';
 		}else{
 			header("HTTP/1.0 404 Not Found");
 			exit();
