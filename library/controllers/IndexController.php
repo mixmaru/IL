@@ -9,7 +9,11 @@ class IndexController{
 	);
 	
 	public function __construct(){
-		$this->model = new IndexModel();
+		try{
+			$this->model = new IndexModel();
+		}catch (PDOException $e){
+			exit('データベースに接続できませんでした。' . $e->getMessage());
+		}
 		//smarty
 		$this->view = new View($this->css_array, $this->js_array);
 	}
