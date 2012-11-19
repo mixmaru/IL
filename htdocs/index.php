@@ -20,7 +20,7 @@ $connInfo = array(
 	'dbuser' => 'shin',
 	'password' => '5963'
 );
-ModelBase::setConnectionInfo($connInfo);
+//ModelBase::setConnectionInfo($connInfo);
 
 //リクエスト処理
 $dispatcher = new Dispatcher();
