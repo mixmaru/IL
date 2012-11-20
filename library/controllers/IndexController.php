@@ -21,8 +21,8 @@ class IndexController{
 	public function indexAction(){
 		$user_id = 1;
 		$user_name = $this->model->getUserName($user_id);
-		//var_dump($user_name);
 		$view_conf = array(
+			'user_name' => $user_name,
 			'title' => 'PicLip',
 			'main_tpl' => 'index.tpl',
 		);

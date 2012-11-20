@@ -23,20 +23,14 @@ class ModelBase {
 	}
 	//クエリ結果を取得
 	public function query($sql, array $params = array()){
-		var_dump($sql);
-		var_dump($params);
 		$stmt = $this->db->prepare($sql);
 		if($params != null){
 			foreach($params as $key => $val){
-				var_dump($key);
-				var_dump($val);
 				$stmt->bindValue(':'.$key, $val);
 			}
 		}
 		$stmt->execute();
-		//var_dump($stmt);
 		$rows = $stmt->fetchAll();
-		//var_dump($rows);
 		return $rows;
 	}
 	//insertを実行

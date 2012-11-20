@@ -11,7 +11,7 @@ class View {
 		$this->smarty->compile_dir = LIB_PATH.'/view/templates_c/';
 		$this->smarty->config_dir = LIB_PATH.'/view/configs/';
 		$this->smarty->cache_dir = LIB_PATH.'/view/cache/';
-		$this->smarty->caching = true;
+		$this->smarty->caching = false;
 		
 		//cssの読み込み準備
 		$count = count($css_array);
@@ -43,7 +43,7 @@ class View {
 		}
 		if($obj){
 			foreach($obj as $key => $value){
-				$this->smarty->assign($key, $value);
+				$this->smarty->assign($key, htmlentities($value, ENT_QUOTES, 'utf-8'));
 			}
 		}
 		$this->smarty->display($base_tpl);

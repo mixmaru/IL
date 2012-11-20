@@ -6,7 +6,7 @@
 				<div class="button">image変更</div>
 			</div>
 			<div class="text">
-				<h2 class="user_name">たくまっち</h2>
+				<h2 class="user_name">{$user_name}</h2>
 				<p class="user_comment">
 					ただ毎日 ああああああああああああああああああああああああああああああああああああ
 				</p>
