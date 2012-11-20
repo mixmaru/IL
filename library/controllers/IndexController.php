@@ -10,9 +10,9 @@ class IndexController{
 	
 	public function __construct(){
 		try{
-			$this->model = new IndexModel();
+			//$this->model = new IndexModel();
 		}catch (PDOException $e){
-			exit('データベースに接続できませんでした。' . $e->getMessage());
+			//exit('データベースに接続できませんでした。' . $e->getMessage());
 		}
 		//smarty
 		$this->view = new View($this->css_array, $this->js_array);
@@ -20,7 +20,7 @@ class IndexController{
 	
 	public function indexAction(){
 		$user_id = 1;
-		$user_name = $this->model->getUserName($user_id);
+		//$user_name = $this->model->getUserName($user_id);
 		//var_dump($user_name);
 		$view_conf = array(
 			'title' => 'PicLip',
