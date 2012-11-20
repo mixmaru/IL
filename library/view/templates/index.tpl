@@ -8,7 +8,7 @@
 			<div class="text">
 				<h2 class="user_name">{$user_name}</h2>
 				<p class="user_comment">
-					ただ毎日 ああああああああああああああああああああああああああああああああああああ
+					{$profile_text}
 				</p>
 			</div>
 		</section>
