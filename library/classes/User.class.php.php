@@ -8,6 +8,10 @@ class User {
 	private $created;
 	private $last_modified;
 	private $is_deleted;
+	
+	public function __construct($user_id) {
+		;
+	}
 }
 
 ?>
