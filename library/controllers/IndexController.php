@@ -20,17 +20,18 @@ class IndexController{
 	}
 	
 	public function indexAction(){
+		//include_once LIB_PATH.'/classes/User.php';
 		try{
-			$user_name = $this->model->getUserName($this->user_id);
-			$profile_text = $this->model->getProfileText($this->user_id);
+			include_once LIB_PATH.'/classes/User.php';
+			$user = new User($this->user_id);
 		}catch(PDOException $e){
 			exit('データベースに接続できませんでした。' . $e->getMessage());
 		}
 		$view_conf = array(
 			'title' => 'PicLip',
 			'main_tpl' => 'index.tpl',
-			'user_name' => $user_name,
-			'profile_text' => $profile_text
+			'user_name' => $user->getName(),
+			'profile_text' => $user->getProfileText()
 		);
 		$this->view->display('layout.tpl', $view_conf);
 	}
