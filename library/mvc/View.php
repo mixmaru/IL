@@ -43,9 +43,16 @@ class View {
 		}
 		if($obj){
 			foreach($obj as $key => $value){
-				$this->smarty->assign($key, htmlentities($value, ENT_QUOTES, 'utf-8'));
+				switch(gettype($value)){
+					case 'object':
+						$this->smarty->assign($key, $value);
+						break;
+					default:
+						$this->smarty->assign($key, htmlentities($value, ENT_QUOTES, 'utf-8'));
+				}
 			}
 		}
+		$this->smarty->debugging = true;
 		$this->smarty->display($base_tpl);
 	}
 	

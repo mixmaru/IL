@@ -26,7 +26,7 @@ class IndexController{
 			'title' => 'PicLip',
 			'main_tpl' => 'index.tpl',
 			'user_name' => $this->user->getName(),
-			'profile_text' => $this->user->getProfileText()
+			'profile_text' => $this->user
 		);
 		$this->view->display('layout.tpl', $view_conf);
 	}

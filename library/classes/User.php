@@ -8,6 +8,7 @@ class User {
 	private $last_modified;
 	private $is_deleted;
 	private $model;
+	public $test = 22;
 	
 	public function __construct($user_id = null) {
 		try{
