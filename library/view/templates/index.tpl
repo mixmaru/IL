@@ -48,6 +48,9 @@
 		</section>
 	</div>
 	<section id="library">
+		{foreach from=$images item=image}
+			<img src="{$image->getPath(1)}">
+		{/foreach}
 		<ul>
 			<li>
 				<img class="image" src="/db/doraemon.png" alt="ドラえもん">

@@ -23,6 +23,9 @@ class Images {
 			$this->images_pool[] = $image;
 		}
 	}
+	public function getImagesPool(){
+		return $this->images_pool;
+	}
 }
 
 ?>

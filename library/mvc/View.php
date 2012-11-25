@@ -45,6 +45,7 @@ class View {
 			foreach($obj as $key => $value){
 				switch(gettype($value)){
 					case 'object':
+					case 'array':
 						$this->smarty->assign($key, $value);
 						break;
 					default:

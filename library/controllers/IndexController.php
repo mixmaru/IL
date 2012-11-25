@@ -16,7 +16,6 @@ class IndexController{
 			$this->model = new IndexModel();
 			$this->user = new User($this->user_id);
 			$this->images = new Images($this->user_id);
-			var_dump($this->images);
 		}catch (PDOException $e){
 			exit('データベースに接続できませんでした。' . $e->getMessage());
 		}
@@ -28,7 +27,8 @@ class IndexController{
 		$view_conf = array(
 			'title' => 'PicLip',
 			'main_tpl' => 'index.tpl',
-			'user' => $this->user
+			'user' => $this->user,
+			'images' => $this->images->getImagesPool()
 		);
 		$this->view->display('layout.tpl', $view_conf);
 	}
