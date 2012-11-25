@@ -8,7 +8,6 @@ class User {
 	private $last_modified;
 	private $is_deleted;
 	private $model;
-	public $test = 22;
 	
 	public function __construct($user_id = null) {
 		try{
@@ -36,11 +35,19 @@ class User {
 			}
 		}
 	}
-	public function getName(){
-		return $this->name;
+	public function getName($escape_flag = false){
+		if($escape_flug){
+			return htmlentities($this->name, ENT_QUOTES, 'utf-8');
+		}else{
+			return $this->name;
+		}
 	}
-	public function getProfileText(){
-		return $this->profile_text;
+	public function getProfileText($escape_flag = false){
+		if($escape_flug){
+			return htmlentities($this->profile_text, ENT_QUOTES, 'utf-8');
+		}else{
+			return $this->profile_text;
+		}
 	}
 }
 ?>

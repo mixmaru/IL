@@ -6,9 +6,9 @@
 				<div class="button">image変更</div>
 			</div>
 			<div class="text">
-				<h2 class="user_name">{$user_name}</h2>
+				<h2 class="user_name">{$user->getName(1)}</h2>
 				<p class="user_comment">
-					{$profile_text->test}
+					{$user->getProfileText(1)}
 				</p>
 			</div>
 		</section>
