@@ -2,7 +2,7 @@
 	<div class="clearfix">
 		<section id="profile_area">
 			<div class="image">
-				<img class="frofile_image" src="/db/profile_image.png">
+				<img class="frofile_image" src="{$user->getProfileImagePath(1)}">
 				<div class="button">image変更</div>
 			</div>
 			<div class="text">

@@ -26,7 +26,7 @@ class User {
 				foreach($row as $val){
 					$this->id = $val['id'];
 					$this->name = $val['name'];
-					$this->profile_image_path = $val['profile_image_path'];
+					$this->profile_image_path = $this->createImagePath($val['profile_image_name']);
 					$this->profile_text = $val['profile_text'];
 					$this->created = $val['created'];
 					$this->last_modified = $val['last_modified'];
@@ -36,18 +36,34 @@ class User {
 		}
 	}
 	public function getName($escape_flag = false){
-		if($escape_flug){
-			return htmlentities($this->name, ENT_QUOTES, 'utf-8');
+		if($escape_flag){
+			return $this->htmlEscape($this->name);
 		}else{
 			return $this->name;
 		}
 	}
 	public function getProfileText($escape_flag = false){
-		if($escape_flug){
-			return htmlentities($this->profile_text, ENT_QUOTES, 'utf-8');
+		if($escape_flag){
+			return $this->htmlEscape($this->profile_text);
 		}else{
 			return $this->profile_text;
 		}
+	}
+	public function getProfileImagePath($escape_flag = false){
+		if($escape_flag){
+			return $this->htmlEscape($this->profile_image_path);
+		}else{
+			return $this->profile_image_path;
+		}
+	}
+	
+	private function createImagePath($image_name){
+		$path = '/files/profile_image/'.$this->id.'/'.$image_name;
+		return $path;
+	}
+	
+	private function htmlEscape($text){
+		return htmlentities($text, ENT_QUOTES, 'utf-8');
 	}
 }
 ?>
