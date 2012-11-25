@@ -26,10 +26,12 @@ class ModelBase {
 		$stmt = $this->db->prepare($sql);
 		if($params != null){
 			foreach($params as $key => $val){
-				$stmt->bindValue(':'.$key, $val);
+				var_dump($val);
+				$stmt->bindValue(":".$key, $val);
 			}
 		}
-		$stmt->execute();
+		var_dump($stmt->execute());
+		var_dump($stmt->errorInfo());
 		$rows = $stmt->fetchAll();
 		return $rows;
 	}

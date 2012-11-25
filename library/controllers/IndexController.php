@@ -3,6 +3,7 @@ class IndexController{
 	private $view;//smarty用
 	private $model;
 	private $user;
+	private $images;
 	private $css_array = array(//このコントローラで表示されるページに必要なcssを指定する
 	    '/css/index.css'
 	);
@@ -14,6 +15,7 @@ class IndexController{
 		try{
 			$this->model = new IndexModel();
 			$this->user = new User($this->user_id);
+			$this->images = new Images($this->user_id);
 		}catch (PDOException $e){
 			exit('データベースに接続できませんでした。' . $e->getMessage());
 		}
