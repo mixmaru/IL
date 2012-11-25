@@ -10,21 +10,17 @@ class Images {
 			exit('データベースに接続できませんでした。' . $e->getMessage());
 		}
 		$table_name = 'images';
-		$sql = sprintf("select * from %s where created_user = :user_id order by id :order", $table_name);
+		$sql = sprintf("select * from %s where created_user = :user_id order by id %s", $table_name, $order);
 		$params = array(
-		    "user_id" => $user_id,
-		    "order" => $order
+		    "user_id" => $user_id
 		);
-		$row = $this->model->query($sql, $params);
-		//var_dump($sql);
-		//var_dump($params);
-		//var_dump($row);
-		foreach($row as $value){
-			try{
-				$image = new Image();				
-			}catch (Exception $e){
-				exit('エラーが発生しました' . $e->getMessage());
-			}
+		$rows = $this->model->query($sql, $params);
+		foreach($rows as $value){
+			$image = new Image();
+			$image->setId($value['id']);
+			$image->setName($value['name']);
+			$image->setPath('/files/contents_image/'.$user_id.'/'.$value['name']);
+			$this->images_pool[] = $image;
 		}
 	}
 }
