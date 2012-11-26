@@ -14,4 +14,6 @@ define('DB_HOST', 'localhost');
 define('DB_NAME', 'piclip');
 define('DB_USER', 'shin');
 define('PASSWORD', '5963');
+
+require_once LIB_PATH.'/classes/Escape.php'
 ?>

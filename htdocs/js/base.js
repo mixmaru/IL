@@ -34,3 +34,11 @@ WindowSize.prototype = {
 		this.$target.css('height', target_height);
 	}
 }
+
+$(function(){
+	var conf = {
+		$target: $('#main_scroll'),
+		$header: $('#header')
+	}
+	var window_size = new WindowSize(conf);
+});

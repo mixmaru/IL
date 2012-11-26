@@ -10,18 +10,6 @@
 {/if}
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 <script type="text/javascript" src="/js/base.js"></script>
-<script>
-{literal}
-	$(function(){
-		var conf = {
-			$target: $('#main_scroll'),
-			$header: $('#header')
-		}
-		var window_size = new WindowSize(conf);
-		console.log(window_size);
-	});
-{/literal}
-</script>
 {if isset($js)}
 	{$js}
 {/if}

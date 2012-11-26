@@ -37,21 +37,21 @@ class User {
 	}
 	public function getName($escape_flag = false){
 		if($escape_flag){
-			return $this->htmlEscape($this->name);
+			return Escape::htmlEscape($this->name);
 		}else{
 			return $this->name;
 		}
 	}
 	public function getProfileText($escape_flag = false){
 		if($escape_flag){
-			return $this->htmlEscape($this->profile_text);
+			return Escape::htmlEscape($this->profile_text);
 		}else{
 			return $this->profile_text;
 		}
 	}
 	public function getProfileImagePath($escape_flag = false){
 		if($escape_flag){
-			return $this->htmlEscape($this->profile_image_path);
+			return Escape::htmlEscape($this->profile_image_path);
 		}else{
 			return $this->profile_image_path;
 		}
@@ -60,10 +60,6 @@ class User {
 	private function createImagePath($image_name){
 		$path = '/files/profile_image/'.$this->id.'/'.$image_name;
 		return $path;
-	}
-	
-	private function htmlEscape($text){
-		return htmlentities($text, ENT_QUOTES, 'utf-8');
 	}
 }
 ?>

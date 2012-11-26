@@ -49,7 +49,7 @@ class View {
 						$this->smarty->assign($key, $value);
 						break;
 					default:
-						$this->smarty->assign($key, htmlentities($value, ENT_QUOTES, 'utf-8'));
+						$this->smarty->assign($key, Escape::htmlEscape($value));
 				}
 			}
 		}

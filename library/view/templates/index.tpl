@@ -48,10 +48,8 @@
 		</section>
 	</div>
 	<section id="library">
-		{foreach from=$images item=image}
-			<img src="{$image->getPath(1)}">
-		{/foreach}
-		<ul>
+		<ul class="library_field">
+			{*
 			<li>
 				<img class="image" src="/db/doraemon.png" alt="ドラえもん">
 				<div class="tags_wrapper">
@@ -213,6 +211,7 @@
 					</ul>
 				</div>
 			</li>
+			*}
 		</ul>
 		<div class="loading_image_wrapper">
 			<img src="/images/loading.gif" alt="now loading...">
