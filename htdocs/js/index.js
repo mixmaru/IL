@@ -30,4 +30,5 @@ $(function(){
 	}
 	var images_controller = new ImagesController(conf);
 	console.log(images_controller);
+	images_controller.getImages();
 });

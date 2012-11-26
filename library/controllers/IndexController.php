@@ -30,5 +30,9 @@ class IndexController{
 		);
 		$this->view->display('layout.tpl', $view_conf);
 	}
+	
+	public function testAction(){
+		echo 'testok';
+	}
 }
 ?>
