@@ -1,15 +1,15 @@
 <?php
-require_once 'Employee.class.phpｓ';
+require_once 'Employee.class.php';
 class Employees implements IteratorAggregate{
-	private $employee;
+	private $employees;
 	public function __construct() {
 		$this->employees = new ArrayObject();
 	}
 	public function add(Employee $employee){
-		$this->employee[] = $employee;
+		$this->employees[] = $employee;
 	}
 	public function getIterator() {
-		return $this->employee->getIterator();
+		return $this->employees->getIterator();
 	}
 }
 ?>
