@@ -5,7 +5,7 @@ require_once 'Item.class.php';
 class DbItemDao implements ItemDao{
 	private $items;
 	public function __construct(){
-		$fp = fopen('item_data.text', 'r');
+		$fp = fopen('item_data.txt', 'r');
 		
 		$dummy = fgets($fp, 4096);
 		
@@ -21,7 +21,7 @@ class DbItemDao implements ItemDao{
 	}
 	public function findById($item_id){
 		if(array_key_exists($item_id, $this->items)){
-			return $this->item[$item_id];
+			return $this->items[$item_id];
 		}else{
 			return null;
 		}

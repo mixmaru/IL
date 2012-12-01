@@ -25,11 +25,12 @@ class DbOrderDao implements OrderDao{
 		}
 		fclose($fp);
 	}
-	public function findById($order_id{
+	public function findById($order_id){
 		if (array_key_exists($order_id, $this->orders)) {
-		return $this->orders[$order_id];
-        } else {
-		return null;
+			return $this->orders[$order_id];
+		} else {
+			return null;
+		}
 	}
 }
 ?>
