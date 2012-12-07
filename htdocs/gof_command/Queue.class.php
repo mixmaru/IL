@@ -9,9 +9,14 @@ class Queue{
 		$this->commands = array();
 		$this->current_index = 0;
 	}
+	
+	public function addCommand(Command $command){
+		$this->commands[] = $command;
+	}
+	
 	public function run(){
 		while(!is_null($command = $this->next())){
-			$command->exechte();
+			$command->execute();
 		}
 	}
 	
