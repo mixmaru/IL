@@ -5,7 +5,7 @@ abstract class TextDecorator implements Text{
 	
 	private $text;
 	
-	public function construct(Text $target){
+	public function __construct(Text $target){
 		$this->text = $target;
 	}
 	

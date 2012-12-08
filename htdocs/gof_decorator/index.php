@@ -18,6 +18,7 @@ if($text !== ''){
 				break;
 		}
 	}
+	var_dump($text_object);
 	echo $text_object->getText()."<br>";
 }
 
