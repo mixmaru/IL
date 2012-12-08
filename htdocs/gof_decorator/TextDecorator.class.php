@@ -1,0 +1,20 @@
+<?php
+require_once 'Text.class.php';
+
+abstract class TextDecorator implements Text{
+	
+	private $text;
+	
+	public function construct(Text $target){
+		$this->text = $target;
+	}
+	
+	public function getText(){
+		return $this->text->getText();
+	}
+	
+	public function setText($str){
+		$this->text->setText($str);
+	}
+}
+?>
