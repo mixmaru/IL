@@ -30,7 +30,7 @@ class ItemFactory{
 		
 		$fp = fopen($filename, 'r');
 		while($buffer = fgets($fp, 4096)){
-			list($item_code, $item_name, $price) = split("\t", $buffer);
+			list($item_code, $item_name, $price) = preg_split("/\t/", $buffer);
 			$this->pool[$item_code] = new Item($item_code, $item_name, $price);
 		}
 		fclose($fp);

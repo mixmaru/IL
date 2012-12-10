@@ -6,7 +6,7 @@ function dumpData($data){
 	foreach($data as $object){
 		echo '<dt>'.htmlspecialchars($object->getName(), ENT_QUOTES).'</dt>';
 		echo '<dd>商品番号：'.$object->getCode().'</dd>';
-		echo '<dd>\\'.number_format($object->getPrice()).'-</dd>';
+		echo '<dd>¥'.number_format((int)$object->getPrice()).'-</dd>';
 	}
 	echo '</dl>';
 }
@@ -14,7 +14,6 @@ function dumpData($data){
 <?php
 
 $factory = ItemFactory::getInstance('data.txt');
-
 $items = array();
 $items[] = $factory->getItem('ABC0001');
 $items[] = $factory->getItem('ABC0002');
