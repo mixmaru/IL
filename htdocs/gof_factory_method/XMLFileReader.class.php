@@ -2,7 +2,7 @@
 require_once 'AbstractReader.class.php';
 require_once 'Reader.class.php';
 
-class XMLFileReader extends AbstractReader implements Reader{
+class XMLFileReader extends AbstractReader{
 	
 	public function read() {
 		$this->handler = simplexml_load_file($file->filename);

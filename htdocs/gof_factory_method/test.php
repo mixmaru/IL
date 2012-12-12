@@ -6,20 +6,17 @@ interface eat{
 
 abstract class animal implements eat{
 	protected $name;
-	//public function __construct($name) {
-	//	$this->name = $name;
-	//}
+	public function __construct($name) {
+		$this->name = $name;
+	}
 	public function getName(){
 		return $this->name;
 	}
-	abstract public function eat();
-	abstract public function bite();
+	//abstract public function eat();
+	//abstract public function bite();
 }
 
 class dog extends animal{
-	public function __construct() {
-		$this->name = "aaa";
-	}
 
 	public function bite() {
 		echo 'かむわん！';

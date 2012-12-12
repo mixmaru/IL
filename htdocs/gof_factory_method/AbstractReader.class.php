@@ -1,4 +1,5 @@
 <?php
+require_once 'Reader.class.php';
 abstract class AbstractReader{
 	protected $filename;
 	protected $handler;
@@ -10,8 +11,8 @@ abstract class AbstractReader{
 		$this->filename = $filename;
 	}
 	
-	abstract public function read();
-	abstract public function display();
+	//abstract public function read();
+	//abstract public function display();
 }
 
 
