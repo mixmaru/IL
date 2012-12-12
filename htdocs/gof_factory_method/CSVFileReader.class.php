@@ -1,7 +1,8 @@
 <?php
 require_once 'AbstractReader.class.php';
+require_once 'Reader.class.php';
 
-class CSVFileReader extends AbstractReader{
+class CSVFileReader extends AbstractReader implements Reader{
 	
 	public function read() {
 		$this->handler = fopen($this->filename, "r");

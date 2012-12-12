@@ -1,6 +1,5 @@
 <?php
-require_once 'Reader.class.php';
-abstract class AbstractReader implements Reader{
+abstract class AbstractReader{
 	protected $filename;
 	protected $handler;
 	
@@ -14,4 +13,6 @@ abstract class AbstractReader implements Reader{
 	abstract public function read();
 	abstract public function display();
 }
+
+
 ?>
