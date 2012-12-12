@@ -1,17 +1,7 @@
 <?php
-require_once 'Reader.class.php';
+require_once 'AbstractReader.class.php';
 
-class CSVFileReader implements Reader{
-	
-	private $filename;
-	private $handler;
-	
-	public function __construct($filename){
-		if(!is_readable($filename)){
-			throw new Exception('file "'.$filename.'" is not readable !');
-		}
-		$this->filename = $filename;
-	}
+class CSVFileReader extends AbstractReader{
 	
 	public function read() {
 		$this->handler = fopen($this->filename, "r");
