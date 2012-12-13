@@ -12,8 +12,12 @@ abstract class animal implements eat{
 	public function getName(){
 		return $this->name;
 	}
-	//abstract public function eat();
-	//abstract public function bite();
+	public function eat(){
+		echo "かむ";
+	}
+	public function bite(){
+		echo "kamu";
+	}
 }
 
 class dog extends animal{
