@@ -36,7 +36,7 @@ class UsersController extends AppController{
 			throw new NotFoundException(__('Invalid user'));
 		}
 		if($this->request->is('post') || $this->request->is('put')){
-			if($this->User->save($this->request=>data)){
+			if($this->User->save($this->request->data)){
 				$this->Session->setFlash(__('The user has been saved'));
 				$this->redirect(array('action' => 'index'));
 			}else{
@@ -45,6 +45,19 @@ class UsersController extends AppController{
 		}else{
 			$this->request->data = $this->User->read(null, $id);
 			unset($this->request->data['User']['password']);
+		}
+	}
+	
+	public function delete($id = null){
+		if(!$this->request->is('post')){
+			throw new MothodNotAllowedException();
+		}
+		$this->User->id = $id;
+		if(!$this->User->exists()){
+			throw new NotFoundException(__('Invalid user'));
+		}
+		if($this->User->Delete()){
+			
 		}
 	}
 }
