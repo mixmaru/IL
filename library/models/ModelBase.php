@@ -17,7 +17,7 @@ class ModelBase {
 		$this->db = new PDO($dsn, self::$connInfo['dbuser'], self::$connInfo['password']);
 		$this->db->query("SET NAMES utf8");
 	}
-	
+	//サーバー情報セット
 	public static function setConnectionInfo($connInfo){
 		self::$connInfo = $connInfo;
 	}

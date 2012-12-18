@@ -1,4 +1,5 @@
 <?php
+require_once LIB_PATH.'/models/UserDAO.php';
 class IndexController{
 	private $view;//smarty用
 	private $model;
@@ -14,7 +15,8 @@ class IndexController{
 	public function __construct(){
 		try{
 			$this->model = new IndexModel();
-			$this->user = new User($this->user_id);
+			$this->user = new UserDAO($this->user_id);
+			var_dump($this->user);
 		}catch (PDOException $e){
 			exit('データベースに接続できませんでした。' . $e->getMessage());
 		}
